@@ -27,12 +27,15 @@ We can therefore define a function that separates lines into a left and right la
 
 To trace a full line from the bottom of the screen to the highest point of our region of interest, we must be able to interpolate the different points returned by our Hough transform function, and find a line that minimizes the distance across those points. This is done by generating a equation of line through polynomial functions in python.
 
+---
+
 ### 2. Identify potential shortcomings with your current pipeline
 
 One potential shortcoming would be what would happen when we detect curved lanes. This scheme will not work well on curved lanes. 
 
 Another shortcoming could be of inaccurately tuned Hough transform parameters. Thigns may get bad if there are drastic changes in images.
 
+---
 
 ### 3. Suggest possible improvements to your pipeline
 This initial implementation worked passably well for the two basic videos, but does not work good on the challenge quiz. 
